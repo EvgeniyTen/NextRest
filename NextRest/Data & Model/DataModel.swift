@@ -7,7 +7,6 @@
 
 import Foundation
 
-// MARK: - Restaurant
 struct Restaurant: Codable {
     let name: String
     let registeredAtTripadvisor: Bool
@@ -119,7 +118,11 @@ enum PriceRangeCurrency: String, Codable {
 
 
 //// MARK: - Encode/decode helpers
-//
+
+
+// Инициализаторы пригодятся для внедрения DI
+
+
 //class JSONNull: Codable, Hashable {
 //
 //    public static func == (lhs: JSONNull, rhs: JSONNull) -> Bool {

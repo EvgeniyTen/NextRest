@@ -21,13 +21,11 @@ class NetworkClient  {
             guard let self = self else {return}
             
             if let error = response.error { print(error.localizedDescription)
-                //поймали ошибку - вышли из функции
                 return
             }
 
             guard let data = response.data,
                   let dataFromJSON = try? JSONDecoder().decode([Restaurant].self, from: data) else { print("Decode error")
-                //поймали ошибку - вышли из функции
                 return
                   }
                 self.restaurantsArray = dataFromJSON

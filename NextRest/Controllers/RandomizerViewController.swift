@@ -7,7 +7,6 @@
 
 import UIKit
 import Alamofire
-import AlamofireImage
 
 
 
@@ -84,10 +83,10 @@ class RandomizerViewController: UIViewController {
             infoLabel.text = "Ценовая категория,видимо, 0 из 5"
             return
         }
-        guard let imageURL = arrayItem.photoUrls?.first else { randomize(); return }
+        guard let imageURL = arrayItem.photoUrls?.first else {return }
         guard let url = URL(string: imageURL) else {return}
         URLSession.shared.dataTask(with: url) { (data, response, error) in
-            guard let data = data, error == nil else { return }
+            guard let data = data, error == nil else {return}
             
             DispatchQueue.main.async {
                 self.restaurantImageLabel.image = UIImage(data: data)
