@@ -10,7 +10,10 @@
 		49D2DAF8BA20E71DFFCE23D3 /* Pods_NextRest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183E08511E1E4B50B287B2EE /* Pods_NextRest.framework */; };
 		FA20E09D2804455400CCEA26 /* moscowRests.json in Resources */ = {isa = PBXBuildFile; fileRef = FA20E09C2804455400CCEA26 /* moscowRests.json */; };
 		FA20E0A12804703B00CCEA26 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA20E0A02804703B00CCEA26 /* NetworkManager.swift */; };
-		FA2F63B7280E8A3400DCF96C /* LeftSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F63B6280E8A3400DCF96C /* LeftSideMenuViewController.swift */; };
+		FA2E42DA280F4F1E00396D3C /* LeftSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E42D8280F4F1E00396D3C /* LeftSideMenuViewController.swift */; };
+		FA2E42DB280F4F1E00396D3C /* LeftSideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2E42D9280F4F1E00396D3C /* LeftSideMenuViewController.xib */; };
+		FA2E42DE280F554500396D3C /* RIghtSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E42DC280F554500396D3C /* RIghtSideMenuViewController.swift */; };
+		FA2E42DF280F554500396D3C /* RIghtSideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2E42DD280F554500396D3C /* RIghtSideMenuViewController.xib */; };
 		FAA79FFF27CCDB5D00CE923C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA79FFE27CCDB5D00CE923C /* AppDelegate.swift */; };
 		FAA7A00127CCDB5D00CE923C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A00027CCDB5D00CE923C /* SceneDelegate.swift */; };
 		FAA7A00627CCDB5D00CE923C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA7A00427CCDB5D00CE923C /* Main.storyboard */; };
@@ -26,7 +29,10 @@
 		79DA37E9F430930D846C60A2 /* Pods-NextRest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextRest.debug.xcconfig"; path = "Target Support Files/Pods-NextRest/Pods-NextRest.debug.xcconfig"; sourceTree = "<group>"; };
 		FA20E09C2804455400CCEA26 /* moscowRests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = moscowRests.json; sourceTree = "<group>"; };
 		FA20E0A02804703B00CCEA26 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		FA2F63B6280E8A3400DCF96C /* LeftSideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSideMenuViewController.swift; sourceTree = "<group>"; };
+		FA2E42D8280F4F1E00396D3C /* LeftSideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSideMenuViewController.swift; sourceTree = "<group>"; };
+		FA2E42D9280F4F1E00396D3C /* LeftSideMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftSideMenuViewController.xib; sourceTree = "<group>"; };
+		FA2E42DC280F554500396D3C /* RIghtSideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIghtSideMenuViewController.swift; sourceTree = "<group>"; };
+		FA2E42DD280F554500396D3C /* RIghtSideMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RIghtSideMenuViewController.xib; sourceTree = "<group>"; };
 		FAA79FFB27CCDB5D00CE923C /* NextRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA79FFE27CCDB5D00CE923C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA7A00027CCDB5D00CE923C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,7 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				FAA7A01227CCDC7B00CE923C /* RandomizerViewController.swift */,
-				FA2F63B6280E8A3400DCF96C /* LeftSideMenuViewController.swift */,
+				FA2E42D8280F4F1E00396D3C /* LeftSideMenuViewController.swift */,
+				FA2E42DC280F554500396D3C /* RIghtSideMenuViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -96,6 +103,8 @@
 		FA20E0A5280470B600CCEA26 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FA2E42DD280F554500396D3C /* RIghtSideMenuViewController.xib */,
+				FA2E42D9280F4F1E00396D3C /* LeftSideMenuViewController.xib */,
 				FAA7A00427CCDB5D00CE923C /* Main.storyboard */,
 				FAA7A00927CCDB6100CE923C /* LaunchScreen.storyboard */,
 			);
@@ -202,7 +211,9 @@
 				FAA7A00B27CCDB6100CE923C /* LaunchScreen.storyboard in Resources */,
 				FA20E09D2804455400CCEA26 /* moscowRests.json in Resources */,
 				FAA7A00827CCDB6100CE923C /* Assets.xcassets in Resources */,
+				FA2E42DF280F554500396D3C /* RIghtSideMenuViewController.xib in Resources */,
 				FAA7A00627CCDB5D00CE923C /* Main.storyboard in Resources */,
+				FA2E42DB280F4F1E00396D3C /* LeftSideMenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,10 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA2F63B7280E8A3400DCF96C /* LeftSideMenuViewController.swift in Sources */,
+				FA2E42DA280F4F1E00396D3C /* LeftSideMenuViewController.swift in Sources */,
 				FA20E0A12804703B00CCEA26 /* NetworkManager.swift in Sources */,
 				FAF879B02801D809008E92FA /* DataModel.swift in Sources */,
 				FAA79FFF27CCDB5D00CE923C /* AppDelegate.swift in Sources */,
+				FA2E42DE280F554500396D3C /* RIghtSideMenuViewController.swift in Sources */,
 				FAA7A00127CCDB5D00CE923C /* SceneDelegate.swift in Sources */,
 				FAA7A01327CCDC7B00CE923C /* RandomizerViewController.swift in Sources */,
 			);

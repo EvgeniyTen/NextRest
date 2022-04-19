@@ -8,11 +8,13 @@
 import UIKit
 
 class LeftSideMenuViewController: UIViewController {
-
+    @IBOutlet weak var viewLabel: UIView!
+    @IBOutlet weak var customerAvatarLabel: UIImageView!
+    @IBOutlet weak var customerNameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemIndigo
-        
+        viewLabel.layer.cornerRadius = 20
     }
 
 }

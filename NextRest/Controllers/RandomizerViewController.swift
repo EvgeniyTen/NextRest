@@ -14,7 +14,8 @@ class RandomizerViewController: UIViewController {
     
     
     //переписать инициализатор для избавления от зависимостей
-    var menu: SideMenuNavigationController?
+    var lefMenu: SideMenuNavigationController?
+    var rightMenu: SideMenuNavigationController?
     var networkClient = NetworkClient()
     
     @IBOutlet weak var mainButtonLabel: UIButton!
@@ -65,11 +66,17 @@ class RandomizerViewController: UIViewController {
     }
     
     @IBAction func wasHereButton(_ sender: UIButton) {
+
     }
     
+    @IBAction func rightSideMenu(_ sender: UIBarButtonItem) {
+        present(rightMenu!, animated: true, completion: nil)
+
+    }
     
     @IBAction func leftSideMenu(_ sender: UIBarButtonItem) {
-        present(menu!, animated: true, completion: nil)
+        present(lefMenu!, animated: true, completion: nil)
+
     }
    
     // MARK: Helper functions
@@ -112,9 +119,14 @@ class RandomizerViewController: UIViewController {
         }
     }
     private func sideMenuSetOptions(){
-        menu = SideMenuNavigationController(rootViewController: LeftSideMenuViewController())
-        menu?.leftSide = true
-        SideMenuManager.default.leftMenuNavigationController = menu
+        lefMenu = SideMenuNavigationController(rootViewController: LeftSideMenuViewController())
+        lefMenu?.leftSide = true
+        SideMenuManager.default.leftMenuNavigationController = lefMenu
+        SideMenuManager.default.addPanGestureToPresent(toView: self.view)
+        
+        
+        rightMenu = SideMenuNavigationController(rootViewController: RIghtSideMenuViewController())
+        SideMenuManager.default.rightMenuNavigationController = rightMenu
         SideMenuManager.default.addPanGestureToPresent(toView: self.view)
     }
 }

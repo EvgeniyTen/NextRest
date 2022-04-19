@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeftSideMenuViewController" customModule="NextRest" customModuleProvider="target">
+            <connections>
+                <outlet property="customerAvatarLabel" destination="nS7-0A-IlG" id="gK1-Sh-tqT"/>
+                <outlet property="customerNameLabel" destination="Dgd-g9-5DJ" id="Cag-sS-A47"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewLabel" destination="8xr-2z-N3a" id="Smh-Ou-0Sa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xr-2z-N3a">
+                    <rect key="frame" x="0.0" y="0.0" width="250" height="252"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Fm7-Bs-9C2">
+                            <rect key="frame" x="0.0" y="70" width="250" height="132"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill.questionmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nS7-0A-IlG">
+                                    <rect key="frame" x="100" y="0.5" width="50" height="48"/>
+                                    <color key="tintColor" red="0.87450980389999999" green="0.95804411170000003" blue="0.87450009579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="JU4-NA-bKN"/>
+                                        <constraint firstAttribute="width" constant="50" id="WNE-vA-VOe"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя Пользователя" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgd-g9-5DJ">
+                                    <rect key="frame" x="51" y="68" width="148.5" height="64"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.87450980389999999" green="0.95804411170000003" blue="0.87450009579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Fm7-Bs-9C2" secondAttribute="bottom" constant="50" id="AiX-D2-HbL"/>
+                        <constraint firstAttribute="trailing" secondItem="Fm7-Bs-9C2" secondAttribute="trailing" id="YE9-k4-NXr"/>
+                        <constraint firstItem="Fm7-Bs-9C2" firstAttribute="top" secondItem="8xr-2z-N3a" secondAttribute="top" constant="70" id="bFc-IN-KNt"/>
+                        <constraint firstItem="Fm7-Bs-9C2" firstAttribute="leading" secondItem="8xr-2z-N3a" secondAttribute="leading" id="mUt-ff-dsx"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="fgl-uM-1EW">
+                    <rect key="frame" x="10" y="322" width="230" height="290"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPX-to-bq4">
+                            <rect key="frame" x="0.0" y="0.0" width="140" height="72.5"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Ресторан недели">
+                                <color key="baseForegroundColor" systemColor="systemIndigoColor"/>
+                            </buttonConfiguration>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5f-iA-Vkm">
+                            <rect key="frame" x="0.0" y="72.5" width="97" height="72.5"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Мои места">
+                                <color key="baseForegroundColor" systemColor="systemIndigoColor"/>
+                            </buttonConfiguration>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wu9-Sa-hkV">
+                            <rect key="frame" x="0.0" y="145" width="85" height="72.5"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Профиль">
+                                <color key="baseForegroundColor" systemColor="systemIndigoColor"/>
+                            </buttonConfiguration>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljb-wH-LzJ">
+                            <rect key="frame" x="0.0" y="217.5" width="97.5" height="72.5"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Настройки">
+                                <color key="baseForegroundColor" systemColor="systemIndigoColor"/>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHl-AM-ap1">
+                    <rect key="frame" x="10" y="845" width="230" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Выйти">
+                        <color key="baseForegroundColor" systemColor="systemIndigoColor"/>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.87450980389999999" green="0.95804411170000003" blue="0.87450009579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sHl-AM-ap1" secondAttribute="trailing" constant="10" id="07T-mR-joJ"/>
+                <constraint firstItem="8xr-2z-N3a" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7zn-oy-VK4"/>
+                <constraint firstItem="fgl-uM-1EW" firstAttribute="top" secondItem="8xr-2z-N3a" secondAttribute="bottom" constant="70" id="FMh-Xw-dQ4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fgl-uM-1EW" secondAttribute="bottom" constant="250" id="P0Z-ex-2eI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8xr-2z-N3a" secondAttribute="bottom" constant="610" id="Qoz-GE-glz"/>
+                <constraint firstItem="8xr-2z-N3a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="a8j-cq-ryU"/>
+                <constraint firstItem="sHl-AM-ap1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="cV3-5k-oRt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fgl-uM-1EW" secondAttribute="trailing" constant="10" id="ckh-HQ-x1Q"/>
+                <constraint firstAttribute="bottom" secondItem="sHl-AM-ap1" secondAttribute="bottom" constant="20" id="eQa-o1-8cw"/>
+                <constraint firstItem="sHl-AM-ap1" firstAttribute="top" secondItem="fgl-uM-1EW" secondAttribute="bottom" constant="233" id="n9o-0T-O5d"/>
+                <constraint firstItem="fgl-uM-1EW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="phE-F2-Gsc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8xr-2z-N3a" secondAttribute="trailing" id="t50-HC-8JU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="61.607142857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="person.fill.questionmark" catalog="system" width="128" height="104"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

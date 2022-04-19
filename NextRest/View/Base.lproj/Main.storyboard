@@ -117,6 +117,9 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" id="vpf-FS-hLW">
                             <imageReference key="image" image="slider.horizontal.3" catalog="system" symbolScale="medium"/>
                             <color key="tintColor" systemColor="systemIndigoColor"/>
+                            <connections>
+                                <action selector="rightSideMenu:" destination="4zx-vS-hxj" id="htV-cZ-ZhU"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
