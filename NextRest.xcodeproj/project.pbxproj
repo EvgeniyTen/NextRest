@@ -10,6 +10,7 @@
 		49D2DAF8BA20E71DFFCE23D3 /* Pods_NextRest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183E08511E1E4B50B287B2EE /* Pods_NextRest.framework */; };
 		FA20E09D2804455400CCEA26 /* moscowRests.json in Resources */ = {isa = PBXBuildFile; fileRef = FA20E09C2804455400CCEA26 /* moscowRests.json */; };
 		FA20E0A12804703B00CCEA26 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA20E0A02804703B00CCEA26 /* NetworkManager.swift */; };
+		FA2F63B7280E8A3400DCF96C /* LeftSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F63B6280E8A3400DCF96C /* LeftSideMenuViewController.swift */; };
 		FAA79FFF27CCDB5D00CE923C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA79FFE27CCDB5D00CE923C /* AppDelegate.swift */; };
 		FAA7A00127CCDB5D00CE923C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A00027CCDB5D00CE923C /* SceneDelegate.swift */; };
 		FAA7A00627CCDB5D00CE923C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA7A00427CCDB5D00CE923C /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		79DA37E9F430930D846C60A2 /* Pods-NextRest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextRest.debug.xcconfig"; path = "Target Support Files/Pods-NextRest/Pods-NextRest.debug.xcconfig"; sourceTree = "<group>"; };
 		FA20E09C2804455400CCEA26 /* moscowRests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = moscowRests.json; sourceTree = "<group>"; };
 		FA20E0A02804703B00CCEA26 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FA2F63B6280E8A3400DCF96C /* LeftSideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSideMenuViewController.swift; sourceTree = "<group>"; };
 		FAA79FFB27CCDB5D00CE923C /* NextRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA79FFE27CCDB5D00CE923C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA7A00027CCDB5D00CE923C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA7A01227CCDC7B00CE923C /* RandomizerViewController.swift */,
+				FA2F63B6280E8A3400DCF96C /* LeftSideMenuViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA2F63B7280E8A3400DCF96C /* LeftSideMenuViewController.swift in Sources */,
 				FA20E0A12804703B00CCEA26 /* NetworkManager.swift in Sources */,
 				FAF879B02801D809008E92FA /* DataModel.swift in Sources */,
 				FAA79FFF27CCDB5D00CE923C /* AppDelegate.swift in Sources */,

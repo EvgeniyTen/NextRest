@@ -6,5 +6,6 @@ target 'NextRest' do
   use_frameworks!
 
 pod 'Alamofire', '~> 5.5'
+pod 'SideMenu'
 
 end

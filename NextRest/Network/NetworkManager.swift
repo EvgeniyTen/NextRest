@@ -19,7 +19,6 @@ class NetworkClient  {
     func execute(_ url: URL) {
         AF.request(url).responseJSON { [weak self] response in
             guard let self = self else {return}
-            
             if let error = response.error { print(error.localizedDescription)
                 return
             }
