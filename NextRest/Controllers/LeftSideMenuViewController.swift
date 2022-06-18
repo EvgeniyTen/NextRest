@@ -14,7 +14,7 @@ class LeftSideMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewLabel.layer.cornerRadius = 20
+        viewLabel.setRoundCorners([.bottomLeft, .bottomRight], radius: 20)
     }
 
 }
