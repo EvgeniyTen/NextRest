@@ -149,7 +149,7 @@
 				FAA7A00027CCDB5D00CE923C /* SceneDelegate.swift */,
 				FAC9FF41285DF43000BA86ED /* AppCoordinator.swift */,
 				FAC9FF24285DDB4400BA86ED /* Localizable */,
-				FAC9FF21285DD69900BA86ED /* Extensions for vIew */,
+				FAC9FF21285DD69900BA86ED /* Extensions for view */,
 				FA20E0A22804704900CCEA26 /* Data & Model */,
 				FA20E0A32804706200CCEA26 /* Network */,
 				FAC9FF1E285DD63300BA86ED /* MainView */,
@@ -172,12 +172,12 @@
 			path = MainView;
 			sourceTree = "<group>";
 		};
-		FAC9FF21285DD69900BA86ED /* Extensions for vIew */ = {
+		FAC9FF21285DD69900BA86ED /* Extensions for view */ = {
 			isa = PBXGroup;
 			children = (
 				FAC9FF22285DD6CF00BA86ED /* Extension4UIVIew.swift */,
 			);
-			path = "Extensions for vIew";
+			path = "Extensions for view";
 			sourceTree = "<group>";
 		};
 		FAC9FF24285DDB4400BA86ED /* Localizable */ = {

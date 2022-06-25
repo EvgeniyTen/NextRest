@@ -15,18 +15,25 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var subDescriptionLabel: UILabel!
     @IBOutlet weak var buttonLabel: UIButton!
 
-
+    @IBOutlet weak var blurLayerView: UIView!
+    @IBOutlet weak var backgroundGradientLayer: UIView!
     
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setupBackgroundGradientAnimation(view: backgroundGradientLayer)
+        setupBackgroundBlur(view: blurLayerView)
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        
     }
     @IBAction func showNextViewController(_ sender: UIButton) {
      
     }
 }
 
-/*
 
- */

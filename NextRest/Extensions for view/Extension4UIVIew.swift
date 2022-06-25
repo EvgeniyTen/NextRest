@@ -26,7 +26,6 @@ public extension String {
     }
 }
 
-
 extension UIView {
     
     func onClick(target: Any, _ selector: Selector) {
@@ -48,18 +47,18 @@ extension UIView {
             layer.mask = mask
         }
     }
-    
-    func fixView(_ container: UIView!) -> Void{
- 
-        self.backgroundColor = .clear
-        self.translatesAutoresizingMaskIntoConstraints = false;
-        self.frame = container.frame;
-        container.addSubview(self);
-        NSLayoutConstraint(item: self, attribute: .leading, relatedBy: .equal, toItem: container, attribute: .leading, multiplier: 1.0, constant: 0).isActive = true
-        NSLayoutConstraint(item: self, attribute: .trailing, relatedBy: .equal, toItem: container, attribute: .trailing, multiplier: 1.0, constant: 0).isActive = true
-        NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal, toItem: container, attribute: .top, multiplier: 1.0, constant: 0).isActive = true
-        NSLayoutConstraint(item: self, attribute: .bottom, relatedBy: .equal, toItem: container, attribute: .bottom, multiplier: 1.0, constant: 0).isActive = true
-    }
+//    
+//    func fixView(_ container: UIView!) -> Void{
+// 
+//        self.backgroundColor = .clear
+//        self.translatesAutoresizingMaskIntoConstraints = false;
+//        self.frame = container.frame;
+//        container.addSubview(self);
+//        NSLayoutConstraint(item: self, attribute: .leading, relatedBy: .equal, toItem: container, attribute: .leading, multiplier: 1.0, constant: 0).isActive = true
+//        NSLayoutConstraint(item: self, attribute: .trailing, relatedBy: .equal, toItem: container, attribute: .trailing, multiplier: 1.0, constant: 0).isActive = true
+//        NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal, toItem: container, attribute: .top, multiplier: 1.0, constant: 0).isActive = true
+//        NSLayoutConstraint(item: self, attribute: .bottom, relatedBy: .equal, toItem: container, attribute: .bottom, multiplier: 1.0, constant: 0).isActive = true
+//    }
 }
 
 extension UIApplication {
@@ -90,5 +89,27 @@ extension UIApplication {
             return localTabController.selectedViewController
         }
         return rootViewController
+    }
+}
+
+extension CAGradientLayer {
+    func setColors(_ newColors: [CGColor],
+                   animated: Bool = true,
+                   withDuration duration: TimeInterval = 0,
+                   timingMethodName name: CAMediaTimingFunctionName? = nil
+    ){
+        if !animated {
+            self.colors = newColors
+            return
+        }
+        let colorAnimation = CABasicAnimation(keyPath: "colors")
+        colorAnimation.fromValue = colors
+        colorAnimation.toValue = newColors
+        colorAnimation.duration = duration
+        colorAnimation.isRemovedOnCompletion = false
+        colorAnimation.fillMode = CAMediaTimingFillMode.forwards
+        colorAnimation.timingFunction = CAMediaTimingFunction(name: name ?? .linear)
+        
+        add(colorAnimation, forKey: "colorsChangeAnimation")
     }
 }

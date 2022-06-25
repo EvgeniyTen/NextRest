@@ -10,8 +10,6 @@ import UIKit
 extension FirstViewController {
     
     func setupUI() {
-        view.backgroundColor = .white
-        
         helloLabel.text = AppLocalizable.hello
         helloLabel.font = .boldSystemFont(ofSize: 35)
 
@@ -24,14 +22,44 @@ extension FirstViewController {
         subDescriptionLabel.text = AppLocalizable.subMainDescription
         questionLabel.font = .systemFont(ofSize: 20, weight: .heavy)
 
-        
-        
         buttonLabel.setTitle(AppLocalizable.actionButton, for: .normal)
         buttonLabel.backgroundColor = .systemIndigo
         buttonLabel.layer.cornerRadius = 20
         buttonLabel.setTitleColor(.white, for: .normal)
         buttonLabel.setTitleColor(.systemIndigo, for: .highlighted)
+    }
+    
+    func setupBackgroundGradientAnimation(view: UIView) {
+        let gradientLayer: CAGradientLayer = CAGradientLayer()
+        gradientLayer.frame = view.bounds
+        gradientLayer.type = .radial
+        gradientLayer.colors = [UIColor.white.cgColor, UIColor.systemIndigo.cgColor]
+        let newColors = [UIColor.systemIndigo.cgColor, UIColor.white.cgColor]
+        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
+        gradientLayer.setColors(newColors, animated: true, withDuration: 3, timingMethodName: .linear)
+        view.layer.addSublayer(gradientLayer)
+    }
+    
+    func setupBackgroundBlur(view: UIView) {
+        
+        let blurView: UIVisualEffectView = {
+            let view = UIVisualEffectView()
+            view.clipsToBounds = true
+            view.translatesAutoresizingMaskIntoConstraints = false
+            return view
+        } ()
+        view.addSubview(blurView)
+        blurView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        blurView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        blurView.heightAnchor.constraint(equalToConstant: view.frame.height).isActive = true
+        blurView.widthAnchor.constraint(equalToConstant: view.frame.width).isActive = true
+        let blurEffect = UIBlurEffect(style: .systemUltraThinMaterialLight)
+        blurView.effect = blurEffect
 
+        
+        view.setRoundCorners([.topLeft, .bottomLeft, .topRight, .bottomRight], radius: 40)
+       
         
     }
 }
