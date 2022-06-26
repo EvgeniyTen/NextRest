@@ -93,7 +93,7 @@ extension UIApplication {
 }
 
 extension CAGradientLayer {
-    func setColors(_ newColors: [CGColor],
+    func setAnimateForColors(_ newColors: [CGColor],
                    animated: Bool = true,
                    withDuration duration: TimeInterval = 0,
                    timingMethodName name: CAMediaTimingFunctionName? = nil

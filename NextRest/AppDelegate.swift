@@ -14,9 +14,14 @@ import UIKit
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-       
-
-        
+        let coordinator = AppCoordinator()
+        let navigationVC = UINavigationController()
+        coordinator.navigationController = navigationVC
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.rootViewController = navigationVC
+        window.makeKeyAndVisible()
+        self.window = window
+        coordinator.start()
         return true
     }
 

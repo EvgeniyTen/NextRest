@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "Goofy.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "person.crop.circle@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

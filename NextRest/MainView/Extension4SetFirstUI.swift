@@ -33,11 +33,11 @@ extension FirstViewController {
         let gradientLayer: CAGradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
         gradientLayer.type = .radial
-        gradientLayer.colors = [UIColor.white.cgColor, UIColor.systemIndigo.cgColor]
-        let newColors = [UIColor.systemIndigo.cgColor, UIColor.white.cgColor]
+        gradientLayer.colors = [UIColor.white.cgColor, UIColor.gray.cgColor, UIColor.systemIndigo.cgColor]
+        let newColors = [UIColor.systemIndigo.cgColor, UIColor.systemPurple.cgColor, UIColor.white.cgColor]
         gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
-        gradientLayer.setColors(newColors, animated: true, withDuration: 3, timingMethodName: .linear)
+        gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)
+        gradientLayer.setAnimateForColors(newColors, animated: true, withDuration: 3, timingMethodName: .linear)
         view.layer.addSublayer(gradientLayer)
     }
     
