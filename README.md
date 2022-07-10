@@ -8,5 +8,4 @@ Restaurant data provided by TripAsdvizor.
 In the next releases, i will realize filters for restaurants  by distinctive features, for example, by type of cuisine
 ![Simulator Screen Shot - iPhone 13 Pro Max - 2022-04-26 at 21 04 22](https://user-images.githubusercontent.com/99474411/165364562-9fe14c63-a5fc-4fbe-9de0-06e72d3d858d.png)
 
-It is also necessary to implement user registration and account personalization.
-![Simulator Screen Shot - iPhone 13 Pro Max - 2022-04-26 at 21 04 16](https://user-images.githubusercontent.com/99474411/165364841-d23f5a39-cbc2-4f4f-97dc-4317814b4af4.png)
+
