@@ -12,17 +12,30 @@ import UIKit
 class RandomizerViewModel: NSObject {
     weak var controller: RandomizerViewController!
     weak var networkClient: NetworkClient!
+    var restArray: [Restaurant]? = []
     
     init(_ controller: RandomizerViewController, networkClient: NetworkClient) {
         super.init()
         self.controller = controller
         self.networkClient = networkClient
-        networkClient.execute(url)
-
+        fetchData()
+    }
+    func fetchData() {
+        networkClient.execute { [weak self] result in
+            guard let self = self else {return}
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let data):
+                    self.restArray = data
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
+        }
     }
     
     func randomize() {
-        guard let arrayItem = networkClient.restaurantsArray.randomElement() else { return }
+        guard let arrayItem = restArray?.randomElement() else { return }
 
         controller.activityIndicator.startAnimating()
         guard let rating = arrayItem.rating else { randomize(); controller.ratingLabel.text = "Рейтинг ресторана: хз"; return }

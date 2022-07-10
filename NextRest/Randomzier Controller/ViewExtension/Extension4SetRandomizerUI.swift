@@ -10,6 +10,7 @@ import UIKit
 import SideMenu
 
 extension RandomizerViewController {
+    
     func setUpNavigationBar() {
         self.navigationItem.hidesBackButton = true
 
@@ -42,12 +43,17 @@ extension RandomizerViewController {
             lefMenu?.leftSide = true
             SideMenuManager.default.leftMenuNavigationController = lefMenu
             SideMenuManager.default.addPanGestureToPresent(toView: self.view)
-    
+
     
             rightMenu = SideMenuNavigationController(rootViewController: RIghtSideMenuViewController())
             SideMenuManager.default.rightMenuNavigationController = rightMenu
             SideMenuManager.default.addPanGestureToPresent(toView: self.view)
         }
     
-    
+    func setUI() {
+        restaurantImageLabel.layer.cornerRadius = CGFloat(self.restaurantImageLabel.bounds.width / 2)
+        restaurantImageLabel.clipsToBounds = true
+        mainButtonLabel.setTitle(AppLocalizable.repeatActionButton, for: .normal)
+        wasHereButtonLabel.setTitle(AppLocalizable.iWasHere, for: .normal)
+    }
 }

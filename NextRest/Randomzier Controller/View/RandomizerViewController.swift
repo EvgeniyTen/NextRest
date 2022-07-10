@@ -31,13 +31,16 @@ class RandomizerViewController: UIViewController, Coordinating {
 
     
     override func viewWillAppear(_ animated: Bool) {
+        setUI()
         setUpNavigationBar()
-
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.randomize()
+        DispatchQueue.main.async { [self] in
+            viewModel.fetchData()
+        }
         sideMenuSetOptions()
         
 
@@ -45,7 +48,7 @@ class RandomizerViewController: UIViewController, Coordinating {
 
         @IBAction func repeatAction(_ sender: Any) {
             viewModel.randomize()
-    
+            mainButtonLabel.setTitle(AppLocalizable.repeatActionButton, for: .normal)
         }
     
         @IBAction func wasHereButton(_ sender: UIButton) {
@@ -53,17 +56,5 @@ class RandomizerViewController: UIViewController, Coordinating {
         }
     
         // MARK: Helper functions
-    
-    
-
-    
-        private func setImage() {
-            DispatchQueue.main.async {
-                self.restaurantImageLabel.layer.cornerRadius = CGFloat((self.restaurantImageLabel.bounds.width / 2) / 2)
-                self.restaurantImageLabel.clipsToBounds = true
-            }
-        }
-
-
    
 }

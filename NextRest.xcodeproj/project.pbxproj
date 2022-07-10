@@ -93,13 +93,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		FA20E0A22804704900CCEA26 /* Data & Model */ = {
+		FA20E0A22804704900CCEA26 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
 				FAF879AF2801D809008E92FA /* DataModel.swift */,
 				FA20E09C2804455400CCEA26 /* moscowRests.json */,
 			);
-			path = "Data & Model";
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		FA20E0A32804706200CCEA26 /* Network */ = {
@@ -121,6 +121,31 @@
 			path = SideMenuControllers;
 			sourceTree = "<group>";
 		};
+		FA301226287AEFDE00271DC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA810941286868AA00A53640 /* RandomizerViewController.swift */,
+				FA810942286868AA00A53640 /* RandomizerViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA301227287AEFE900271DC3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA8109472868837800A53640 /* RandomizerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA301228287AEFFC00271DC3 /* ViewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				FA810945286876F200A53640 /* Extension4SetRandomizerUI.swift */,
+			);
+			path = ViewExtension;
+			sourceTree = "<group>";
+		};
 		FA81091A28675AC600A53640 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,10 +158,9 @@
 		FA8109402868687D00A53640 /* Randomzier Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FA810941286868AA00A53640 /* RandomizerViewController.swift */,
-				FA8109472868837800A53640 /* RandomizerViewModel.swift */,
-				FA810945286876F200A53640 /* Extension4SetRandomizerUI.swift */,
-				FA810942286868AA00A53640 /* RandomizerViewController.xib */,
+				FA301226287AEFDE00271DC3 /* View */,
+				FA301227287AEFE900271DC3 /* ViewModel */,
+				FA301228287AEFFC00271DC3 /* ViewExtension */,
 			);
 			path = "Randomzier Controller";
 			sourceTree = "<group>";
@@ -167,7 +191,7 @@
 				FA81091A28675AC600A53640 /* Coordinator */,
 				FAC9FF24285DDB4400BA86ED /* Localizable */,
 				FAC9FF21285DD69900BA86ED /* Extensions for view */,
-				FA20E0A22804704900CCEA26 /* Data & Model */,
+				FA20E0A22804704900CCEA26 /* DataModel */,
 				FA20E0A32804706200CCEA26 /* Network */,
 				FAC9FF1E285DD63300BA86ED /* MainView */,
 				FA8109402868687D00A53640 /* Randomzier Controller */,

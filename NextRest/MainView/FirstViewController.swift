@@ -37,6 +37,7 @@ class FirstViewController: UIViewController, Coordinating {
     }
     @IBAction func showNextViewController(_ sender: UIButton) {
         coordinator?.eventOccurent(with: .buttonTapped)
+        
     }
 }
 

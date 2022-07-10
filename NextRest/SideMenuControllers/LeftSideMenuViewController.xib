@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -25,10 +25,10 @@
                     <rect key="frame" x="0.0" y="0.0" width="250" height="252"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Fm7-Bs-9C2">
-                            <rect key="frame" x="0.0" y="70" width="250" height="112"/>
+                            <rect key="frame" x="0.0" y="75.666666666666657" width="250" height="100.66666666666666"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle.fill.badge.questionmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nS7-0A-IlG">
-                                    <rect key="frame" x="98.5" y="0.0" width="51.5" height="49.5"/>
+                                    <rect key="frame" x="98.333333333333329" y="0.6666666666666643" width="51.666666666666671" height="49"/>
                                     <color key="tintColor" red="0.87450980389999999" green="0.95804411170000003" blue="0.87450009579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="JU4-NA-bKN"/>
@@ -36,7 +36,7 @@
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя Пользователя" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgd-g9-5DJ">
-                                    <rect key="frame" x="51" y="50" width="148.5" height="62"/>
+                                    <rect key="frame" x="50.666666666666671" y="50" width="148.66666666666663" height="50.666666666666657"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="0.87450980389999999" green="0.95804411170000003" blue="0.87450009579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <nil key="highlightedColor"/>
@@ -46,38 +46,42 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="Fm7-Bs-9C2" secondAttribute="bottom" constant="70" id="AiX-D2-HbL"/>
+                        <constraint firstItem="Fm7-Bs-9C2" firstAttribute="centerY" secondItem="8xr-2z-N3a" secondAttribute="centerY" id="4OR-1G-Qs9"/>
+                        <constraint firstAttribute="trailing" secondItem="Fm7-Bs-9C2" secondAttribute="trailing" id="D0f-MQ-goQ"/>
+                        <constraint firstItem="Fm7-Bs-9C2" firstAttribute="height" secondItem="8xr-2z-N3a" secondAttribute="height" multiplier="0.4" id="Fp0-e1-Ait"/>
+                        <constraint firstItem="Fm7-Bs-9C2" firstAttribute="width" secondItem="8xr-2z-N3a" secondAttribute="width" id="QXH-r2-REk"/>
                         <constraint firstAttribute="trailing" secondItem="Fm7-Bs-9C2" secondAttribute="trailing" id="YE9-k4-NXr"/>
-                        <constraint firstItem="Fm7-Bs-9C2" firstAttribute="top" secondItem="8xr-2z-N3a" secondAttribute="top" constant="70" id="bFc-IN-KNt"/>
+                        <constraint firstItem="Fm7-Bs-9C2" firstAttribute="centerX" secondItem="8xr-2z-N3a" secondAttribute="centerX" id="hS0-TC-g8h"/>
                         <constraint firstItem="Fm7-Bs-9C2" firstAttribute="leading" secondItem="8xr-2z-N3a" secondAttribute="leading" id="mUt-ff-dsx"/>
+                        <constraint firstItem="Fm7-Bs-9C2" firstAttribute="leading" secondItem="8xr-2z-N3a" secondAttribute="leading" id="y7o-VW-zWk"/>
                     </constraints>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="fgl-uM-1EW">
-                    <rect key="frame" x="10" y="322" width="230" height="290"/>
+                    <rect key="frame" x="10" y="272" width="230" height="358.33333333333326"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPX-to-bq4">
-                            <rect key="frame" x="0.0" y="0.0" width="140" height="72.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="140" height="89.666666666666671"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Ресторан недели">
                                 <color key="baseForegroundColor" systemColor="systemIndigoColor"/>
                             </buttonConfiguration>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5f-iA-Vkm">
-                            <rect key="frame" x="0.0" y="72.5" width="97" height="72.5"/>
+                            <rect key="frame" x="0.0" y="89.666666666666686" width="97" height="89.666666666666686"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Мои места">
                                 <color key="baseForegroundColor" systemColor="systemIndigoColor"/>
                             </buttonConfiguration>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wu9-Sa-hkV">
-                            <rect key="frame" x="0.0" y="145" width="85" height="72.5"/>
+                            <rect key="frame" x="0.0" y="179.33333333333331" width="84.666666666666671" height="89.333333333333314"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Профиль">
                                 <color key="baseForegroundColor" systemColor="systemIndigoColor"/>
                             </buttonConfiguration>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljb-wH-LzJ">
-                            <rect key="frame" x="0.0" y="217.5" width="97.5" height="72.5"/>
+                            <rect key="frame" x="0.0" y="268.66666666666663" width="97.666666666666671" height="89.666666666666686"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Настройки">
                                 <color key="baseForegroundColor" systemColor="systemIndigoColor"/>
@@ -98,14 +102,13 @@
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sHl-AM-ap1" secondAttribute="trailing" constant="10" id="07T-mR-joJ"/>
                 <constraint firstItem="8xr-2z-N3a" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7zn-oy-VK4"/>
-                <constraint firstItem="fgl-uM-1EW" firstAttribute="top" secondItem="8xr-2z-N3a" secondAttribute="bottom" constant="70" id="FMh-Xw-dQ4"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fgl-uM-1EW" secondAttribute="bottom" constant="250" id="P0Z-ex-2eI"/>
+                <constraint firstItem="fgl-uM-1EW" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.4" id="Apv-Re-WLl"/>
+                <constraint firstItem="fgl-uM-1EW" firstAttribute="top" secondItem="8xr-2z-N3a" secondAttribute="bottom" constant="20" id="FMh-Xw-dQ4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8xr-2z-N3a" secondAttribute="bottom" constant="610" id="Qoz-GE-glz"/>
                 <constraint firstItem="8xr-2z-N3a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="a8j-cq-ryU"/>
                 <constraint firstItem="sHl-AM-ap1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="cV3-5k-oRt"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fgl-uM-1EW" secondAttribute="trailing" constant="10" id="ckh-HQ-x1Q"/>
                 <constraint firstAttribute="bottom" secondItem="sHl-AM-ap1" secondAttribute="bottom" constant="20" id="eQa-o1-8cw"/>
-                <constraint firstItem="sHl-AM-ap1" firstAttribute="top" secondItem="fgl-uM-1EW" secondAttribute="bottom" constant="233" id="n9o-0T-O5d"/>
                 <constraint firstItem="fgl-uM-1EW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="phE-F2-Gsc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8xr-2z-N3a" secondAttribute="trailing" id="t50-HC-8JU"/>
             </constraints>

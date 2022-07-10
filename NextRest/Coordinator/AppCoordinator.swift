@@ -11,13 +11,13 @@ import UIKit
 class AppCoordinator: Coordinator {
     var navigationController: UINavigationController?
     
+    
     func eventOccurent(with type: Event) {
         switch type {
         case.buttonTapped:
-            var vc: UIViewController & Coordinating = RandomizerViewController()
-            
-            vc.coordinator = self
+            let vc: UIViewController & Coordinating = RandomizerViewController()
             navigationController?.pushViewController(vc, animated: true)
+            
         }
         
     }
